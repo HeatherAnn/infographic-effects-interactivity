@@ -54,3 +54,81 @@ p {
   border-radius: 20px;
   text-align: center;
 }
+
+.heartbox {
+  animation: wiggle 1s ease-in;
+  opacity: 0;
+}
+
+@keyframes wiggle {
+
+  0% { transform: translate(0, 0); }
+
+  50% { transform: translate(15px, ); }
+
+  75% { transform: translate(-15px); }
+
+  100% { transform: translate(0, 0); }
+
+}
+
+
+.blush {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.heart {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.singleheart {
+  animation: bounce .5s cubic-bezier(.5, -0.9, .60, 1.9) forwards;
+  transition:
+    width .3s cubic-bezier(.7, -0.6, .4, 1.5),
+    height .3s cubic-bezier(.7, -0.6, .4, 1.5),
+    opacity .3s ease-out
+    ;
+  opacity: 0;
+}
+
+.bounce {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0% {
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.gifts {
+  opacity: 0;
+}
+
+@keyframes slide {
+
+  0% { transform: translate(0, 0); }
+
+  50% { transform: translate(15px, ); }
+
+  75% { transform: translate(-15px); }
+
+  100% { transform: translate(0, 0); }
+
+}
+
+.animate {
+  animation: slide 1s ease-in;
+  opacity: 1;
+}
