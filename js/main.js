@@ -35,6 +35,10 @@ $('.click-inflate').on('click', function () {
   $('.inflate').toggleClass('appear');
 });
 
+$('.click-smirk').on('click', function () {
+  $('.smirk').toggleClass('appear');
+});
+
 $gifts.waypoint(function () {
   $gifts.addClass('animate');
 }, {offset:'50%'});

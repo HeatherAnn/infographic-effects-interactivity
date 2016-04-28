@@ -27,7 +27,7 @@ h1 {
   font-size: 4rem;
 }
 
-h3 {
+h2 {
   font-family: "Oswald", sans-serif;
   color: #f1738e;
   font-size: 2rem;
@@ -103,8 +103,9 @@ div#text {
 
 }
 
-.appear {
-  opacity: 1;
+.smirk {
+  transition: 1s ease;
+  opacity: 0;
 }
 
 .blush {
@@ -118,15 +119,12 @@ div#text {
 }
 
 .show {
+  transition: 1s ease;
   opacity: 1;
 }
 
 .inflate {
-  animation: bounce .5s cubic-bezier(.5, -0.9, .60, 1.9) forwards;
-  transition:
-    width .3s cubic-bezier(.7, -0.6, .4, 1.5),
-    height .3s cubic-bezier(.7, -0.6, .4, 1.5),
-    opacity .3s ease-out;
+  transition: 1s ease;
   opacity: 0;
 }
 
