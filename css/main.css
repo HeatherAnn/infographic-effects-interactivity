@@ -23,7 +23,7 @@ body {
 
 span {
   font-family: "Oswald", sans-serif;
-  color: #A11D21;
+  color: #a11d21;
   font-size: 3rem;
 }
 
@@ -91,7 +91,7 @@ div#text {
 
   0% { transform: translate(0, 0); }
 
-  50% { transform: translate(20px, ); }
+  50% { transform: translate(20px); }
 
   75% { transform: translate(-20px); }
 
@@ -153,7 +153,7 @@ div#text {
 
   0% { transform: translate(0, 0); }
 
-  50% { transform: translate(15px, ); }
+  50% { transform: translate(15px); }
 
   75% { transform: translate(-15px); }
 
