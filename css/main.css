@@ -21,21 +21,16 @@ body {
   margin: 3em;
 }
 
-h1 {
+span {
   font-family: "Oswald", sans-serif;
-  color: #ef6283;
+  color: #A11D21;
   font-size: 3rem;
-}
-
-h2 {
-  font-family: "Oswald", cursive;
-  color: #a11d21;
-  font-size: 5rem;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   color: #f1738e;
+  font-size: 2rem;
 }
 
 p {
@@ -55,23 +50,58 @@ p {
   text-align: center;
 }
 
-.heartbox {
+.heartbackground {
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  background: url("../images/heartbackground.svg") no-repeat center center / contain transparent;
+  animation: pulse 1s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+div#text {
+  width: 0px;
+  height: 8em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hover-heart {
   animation: wiggle 1s ease-in;
-  opacity: 0;
+  opacity: 1;
 }
 
 @keyframes wiggle {
 
   0% { transform: translate(0, 0); }
 
-  50% { transform: translate(15px, ); }
+  50% { transform: translate(20px, ); }
 
-  75% { transform: translate(-15px); }
+  75% { transform: translate(-20px); }
 
   100% { transform: translate(0, 0); }
 
 }
 
+.appear {
+  opacity: 1;
+}
 
 .blush {
   transition: 1s ease;
@@ -87,7 +117,7 @@ p {
   opacity: 1;
 }
 
-.singleheart {
+.inflate {
   animation: bounce .5s cubic-bezier(.5, -0.9, .60, 1.9) forwards;
   transition:
     width .3s cubic-bezier(.7, -0.6, .4, 1.5),
@@ -95,10 +125,6 @@ p {
     opacity .3s ease-out
     ;
   opacity: 0;
-}
-
-.bounce {
-  opacity: 1;
 }
 
 @keyframes bounce {
@@ -110,6 +136,13 @@ p {
     height: 100px;
     width: 100px;
   }
+}
+
+.appear {
+  height: 0;
+  width: 0;
+  opacity: 1;
+  animation-name: none;
 }
 
 .gifts {
