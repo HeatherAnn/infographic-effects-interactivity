@@ -21,15 +21,21 @@ body {
   margin: 3em;
 }
 
-span {
+h1 {
   font-family: "Oswald", sans-serif;
   color: #a11d21;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   color: #f1738e;
+  font-size: 2rem;
+}
+
+span {
+  font-family: "Oswald", sans-serif;
+  color: white;
   font-size: 2rem;
 }
 
