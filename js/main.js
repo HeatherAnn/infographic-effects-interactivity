@@ -41,4 +41,4 @@ $('.click-smirk').on('click', function () {
 
 $gifts.waypoint(function () {
   $gifts.addClass('animate');
-}, {offset:'50%'});
+}, {offset: '50%'});
