@@ -3,6 +3,7 @@ var $body = $('.background');
 var $heartbackground;
 var backgroundWidth = $body.outerWidth();
 var backgroundHeight = $body.outerHeight();
+var spanWidth = $('#text span').width();
 
 for (i = 0; i < 75; i++) {
   $heartbackground = $('<background>');
@@ -16,8 +17,7 @@ for (i = 0; i < 75; i++) {
   $body.append($heartbackground);
 }
 
-var spanWidth = $('#text span').width();
-$('#text').animate( { width: spanWidth }, 3000 );
+$('#text').animate({width: spanWidth}, 3000);
 
 $('.hover-heart').on('click', function () {
   $('.hover-heart').toggleClass('appear');
@@ -37,4 +37,4 @@ $('.click-inflate').on('click', function () {
 
 $gifts.waypoint(function () {
   $gifts.addClass('animate');
-}, { offset:'50%'} );
+}, {offset:'50%'});
