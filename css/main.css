@@ -33,10 +33,8 @@ h2 {
   font-size: 2rem;
 }
 
-span {
-  font-family: "Oswald", sans-serif;
+.white {
   color: white;
-  font-size: 2rem;
 }
 
 p {
@@ -78,12 +76,6 @@ p {
     width: 50px;
     height: 50px;
   }
-}
-
-div#text {
-  height: 8em;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .hover-heart {

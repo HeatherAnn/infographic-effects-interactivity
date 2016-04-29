@@ -3,7 +3,6 @@ var $body = $('.background');
 var $heartbackground;
 var backgroundWidth = $body.outerWidth();
 var backgroundHeight = $body.outerHeight();
-var spanWidth = $('#text span').width();
 
 for (i = 0; i < 75; i++) {
   $heartbackground = $('<div>');
@@ -16,8 +15,6 @@ for (i = 0; i < 75; i++) {
   });
   $body.append($heartbackground);
 }
-
-$('#text').animate({width: spanWidth}, 3000);
 
 $('.hover-heart').on('click', function () {
   $('.hover-heart').toggleClass('appear');
