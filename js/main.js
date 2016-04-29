@@ -6,7 +6,7 @@ var backgroundHeight = $body.outerHeight();
 var spanWidth = $('#text span').width();
 
 for (i = 0; i < 75; i++) {
-  $heartbackground = $('<background>');
+  $heartbackground = $('<div>');
   $heartbackground.addClass('heartbackground');
   $heartbackground.css({
     top: Math.random() * backgroundHeight,
